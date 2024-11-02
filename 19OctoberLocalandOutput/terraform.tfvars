@@ -1,0 +1,7 @@
+rg_name = "dhondhu-rg"
+location="eastus"
+st_name = "st1234"
+app_code = "dhondhu_ap"
+cost_center = "john_435"
+environment = "dev"
+app_id="Test123"
