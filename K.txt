@@ -32,3 +32,21 @@ What is Bluegreen and canary deployments?
 smooth transition with no downtime. **Canary Deployment** gradually rolls out the new version to a small subset of users first, allowing you to test and verify it
 before a full-scale release. Both strategies help manage updates with minimal disruption.
 =====================================================================================================================================================================
+	Explain the deployment method you follow for code deployment
+
+For code deployment, I often use **Rolling Updates** because they replace old versions of an application with new ones gradually. This method ensures that users experience minimal downtime and lets you monitor the new version's performance before completing the update. It’s like upgrading parts of a machine while keeping it running.
+=====================================================================================================================================================================
+What are the Steps involved in release management of application
+
+Release management involves:
+
+1. **Planning**: Decide what features or fixes will be included in the release and set a timeline.
+2. **Development and Testing**: Develop the code and thoroughly test it to ensure it works correctly.
+3. **Deployment and Monitoring**: Release the application to users and monitor its performance to catch any issues early.
+
+These steps help ensure a smooth and successful application release.
+=======================================================================================================================================================================
+10 . What are the volume in Kubernetes.
+
+In Kubernetes, a **volume** is a storage resource that containers use to store data persistently. It allows data to persist beyond the life of a single container and be shared among multiple containers. Think of it as a shared storage drive that containers can read from and write to.
+=======================================================================================================================================================================
