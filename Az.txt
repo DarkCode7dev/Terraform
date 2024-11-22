@@ -1,0 +1,71 @@
+1 Q. Types of instances offerd by azure
+
+General Purpose: These VMs are like all-rounders. They’re good for everyday tasks, like running websites or small databases, because they have a balanced amount of CPU power 
+and memory.
+
+Compute Optimized: These VMs are designed for tasks that need a lot of processing power, like handling heavy computations or running complex applications. They have more 
+CPU power compared to memory.
+
+Memory Optimized: These VMs are built to handle lots of data at once, making them great for applications that need a lot of memory, like big databases or applications that
+work with large amounts of data.	
+============================================================================================================================================================================
+2 Q. How do you setup azure VM?
+
+To set up an Azure VM:
+
+1. **Create the VM**: Use the Azure portal to select the VM size, operating system, and configuration settings.
+2. **Configure Network and Security**: Set up network options, firewalls, and security groups to control access.
+3. **Deploy and Connect**: Start the VM and connect to it via Remote Desktop (for Windows) or SSH (for Linux) to manage and use it.
+
+This process provisions a virtual machine on Azure, tailored to your needs and accessible for further configuration.
+============================================================================================================================================================================
+3 Q. Diffrence between scaleset and availability set?
+
+Availability Set ensures your VMs stay up and running during hardware failures by spreading them across different servers.
+
+Scale Set automatically adjusts the number of VMs based on current demand, like adding more workers when things get busy. While Availability Set focuses on reliability, 
+Scale Set focuses on flexibility and scaling.	
+
+============================================================================================================================================================================
+Question.4 What are iaas, paas, saas?
+
+IaaS (Infrastructure as a Service) provides basic computing resources like virtual machines and storage, letting you build and manage your own software.
+
+PaaS (Platform as a Service) offers a ready-made environment to develop, run, and manage applications without worrying about the underlying infrastructure. 
+
+SaaS (Software as a Service) delivers fully functional applications over the internet that you can use directly, like email or office software, without managing anything
+behind the scenes.
+============================================================================================================================================================================
+Question.5) What is Public private and hybrid cloud?
+
+Public Cloud is like renting space on a shared server, where multiple users use the same resources over the internet.
+
+Private Cloud is like having your own dedicated server that only you and your organization use.
+
+Hybrid Cloud combines both, allowing you to use both public and private clouds to get the best of both worlds, like having a shared workspace and a private office.	
+============================================================================================================================================================================
+Question.6) How to do we perform connectivity in between Vm if they are in different subscription.
+
+To connect VMs in different Azure subscriptions, you can set up a Virtual Network Peering or use a VPN Gateway. Virtual Network Peering links networks directly, 
+while a VPN Gateway creates a secure connection over the internet. Both methods allow VMs to communicate across subscriptions as if they were on the same network.
+============================================================================================================================================================================
+Question.7)  why you are using application gateway as entrypoint?
+
+Using an Application Gateway as an entry point helps manage and direct web traffic efficiently. It acts like a traffic manager, balancing loads across multiple servers and 
+providing security features such as SSL termination. This ensures your website or app runs smoothly and securely by handling incoming traffic before it reaches your servers.
+============================================================================================================================================================================
+Question.8)	 what is loadbalancers and its lb rule.
+
+A Load Balancer distributes incoming traffic across multiple servers to ensure no single server gets overwhelmed. LB Rules (Load Balancer Rules) define how this traffic 
+should be distributed, such as directing requests to different servers based on factors like their availability or workload. This setup helps keep your application 
+running efficiently and reliably.	
+
+
+
+
+
+
+
+
+
+
