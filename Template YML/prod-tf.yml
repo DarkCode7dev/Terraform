@@ -1,0 +1,8 @@
+trigger:
+- main 
+pool: 'zelectric_pool'
+
+stages:
+  - template: templates/tf-template.yml
+    parameters:
+      environment: dev
