@@ -1,0 +1,15 @@
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+WORKDIR /dhondhu
+COPY . . 
+
+RUN dotnet restore
+RUN dotnet build --configuration Release
+RUN dotnet publish -c Release -o ./publish
+
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 
+#is wa
+WORKDIR /dotnet_artifacts
+COPY --from=build /dhondhu/publish .
+#WE r not using run because ye temprory container me hi run karne lagta hai to Entry point use kar rahe hai take 
+# ye tab run kare zab image se container banaye
+ENTRYPOINT dotnet ElearnBackend.dll
